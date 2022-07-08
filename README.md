@@ -56,7 +56,7 @@ Our database was constructed using PostgreSQL in pgAdmin 4. Our tables and relat
 
 [Data Dictionary]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/0ccd6804cc487fa3167548a021a4f9974764811d/pic/data%20dictionary.png')
 
-![Final_ERD](https://github.com/Diana7e/Dream_Team_Final_Project/blob/0ccd6804cc487fa3167548a021a4f9974764811d/pic/data%20processing%20.png)
+![Final_ERD](https://github.com/Diana7e/Dream_Team_Final_Project/blob/0ccd6804cc487fa3167548a021a4f9974764811d/pic/data%20dictionary.png)
  
 
 ## Machine Learning

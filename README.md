@@ -35,7 +35,7 @@ The outcome of this project we also believe will provide a guide for future home
 - XXXX
 - Tableau
 
-### Group Presentation Can Be Found [Here](https://docs.google.com/XXXXXXX=sharing)
+### Group Presentation Can Be Found [Here]('https://docs.google.com/presentation/d/1p3f3fPAG52i6CuOPlITI9NBqrMoxVzpww_r6iccB7fo/edit?usp=sharing')
 
 ## Data Exploration
  

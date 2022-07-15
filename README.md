@@ -151,6 +151,7 @@ We were able to use our dashboard to answer two of our initial questions:
 ![Avg Home Pirce vs School Ranking](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/Preci%20per%20%20room%20%20(3dr)%20based%20on%20school%20rantinking%20and%20location'.png)
 
 2. How does Prime Rate affect home value?
+
 	we can see that as the interest (prime) rate has decreased, the average home price has increased over time.
 ![Prime Rate vs Home Value](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/prime%20rate%20and%20avr%20price%20per%20room%20overtime.png)
 
@@ -158,5 +159,6 @@ We were able to use our dashboard to answer two of our initial questions:
 The project would be for home buyers/sallers to determine if the home they are looking to purchase is above or below avg price for this location, size, and school proximity.
 It is important to note that this model does not take into account Year build, Sq, Condition, etc  
 ![Avg Home Pirce vs School Ranking](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/Estimated%20Price%20per%20room.png)
+
 
 

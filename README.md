@@ -36,8 +36,7 @@ The outcome of this project we also believe will provide a guide for future home
 - Tableau
 
 
-### Group Presentation Can Be Found 
-[Here]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/Dream_Team_Project_Presentation.pptx')
+### Group Presentation Can Be Found [Here](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/Dream_Team_Project_Presentation.pptx)
 
 
 ## Data Exploration

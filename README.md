@@ -58,11 +58,11 @@ We explored out data using Python & Jupyter Notebook. We utilized the Pandas, Ma
 
 Our database was constructed using PostgreSQL in pgAdmin 4. Our tables and relationships are shown in the ERD below. For a more detailed description of the data, please use the data dictionary below.
 
-[Data Dictionary]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/0ccd6804cc487fa3167548a021a4f9974764811d/pic/data%20dictionary.png')
+[Data Dictionary](https://github.com/Diana7e/Dream_Team_Final_Project/blob/0ccd6804cc487fa3167548a021a4f9974764811d/pic/data%20dictionary.png)
 
 ![Final_ERD](https://github.com/Diana7e/Dream_Team_Final_Project/blob/0ccd6804cc487fa3167548a021a4f9974764811d/pic/data%20dictionary.png)
  
-[Clan Set of tables] ('https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/cleaned_data/ML_data2.csv')
+[Clean Set of tables](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/cleaned_data/ML_data2.csv)
  
 
 ## Machine Learning
@@ -99,9 +99,9 @@ The features include:
 * BATHRM - Number of bathrooms in the house
 * added Price Per Roon calculationn to normalise for the trend analysis.
 
-![Ilustration]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Data%20Exploration/Data%20exporation%201.png')
-![Ilustration]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Data%20Exploration/Data%20Exploration%204.png')
-![Ilustration]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Data%20Exploration/Feature%20Importance.png') 
+![Ilustration 1](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Data%20Exploration/Data%20exporation%201.png)
+![Ilustration 2](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Data%20Exploration/Data%20Exploration%204.png)
+![Ilustration 3](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Data%20Exploration/Feature%20Importance.png) 
 
 ### Machine Learning Model Limitations and Benefits
 RandomForestRegressor
@@ -119,15 +119,15 @@ Avoid overfitting by using cross-validation
 ### Update 1
 We found through Data Exploration that we need to use Price Per room as X variable instead of sales price total - to avoid multi-correlation issues and also we are exploring Linear Regression and RandomForrestRegressor  to see which one will give higher accuracy
 
-[First Attempt with sales price]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/for%20ML/Final_project_ML.ipynb')
-![First Attempt with sales price]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Machine%20Learning/First%20run%20.png')
+[First Attempt with sales price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/for%20ML/Final_project_ML.ipynb)
+![First Attempt with sales price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Machine%20Learning/First%20run%20.png)
 
 ### Update 2
 after trying to alter  models we were able to achieve an accuracy >50%. By cleaning ireelevant data and working with Price per room instead of Sales price. Also Quadrant and ZIP plays a role:  For example, a house in southeast DC which is considered mostly low income could have the same number of features as a house in northwest DC which is considered higher income but sell for completely different prices. 
 
-[Second Attempt with price per room price]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/cleaned_data/Final_project_ML-update.ipynb')
+[Second Attempt with price per room price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/cleaned_data/Final_project_ML-update.ipynb)
 
-![RFR Prediction]('https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Machine%20Learning/RFR%20result%20.png')
+![RFR Prediction](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Machine%20Learning/RFR%20result%20.png)
 
 As we can see we got to a very close match between Prediction price and Actual with RFR. Considering we are using a limited data set, and ignoring condition or property, Size of SQf, and year build -  it does increases error in the prediction model.
 

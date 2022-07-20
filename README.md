@@ -67,9 +67,9 @@ Our database was constructed using PostgreSQL in pgAdmin 4. Our tables and relat
 
 ## Machine Learning
 The Machine Learning resources and codes are found folder [for ML](https://github.com/Diana7e/Dream_Team_Final_Project/tree/main/for%20ML)
-Data:[ML_data2.csv](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/ML_data2.csv)
-Codes:[Final_ML_codes_update(sied).ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied).ipynb)
-Uses Provisional DB
+- Data:[ML_data2.csv](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/ML_data2.csv)
+- Codes:[Final_ML_codes_update(sied).ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied).ipynb)
+- Uses Provisional DB
 
 ### Data Preprocessing
 

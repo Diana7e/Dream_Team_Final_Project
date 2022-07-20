@@ -80,7 +80,9 @@ Used pandas to clean data as well as remove large amounts of rows from the ML da
 
 ### Feature Engineering - Feature Select - Why and How Selected?
 
-We chose the features from the original dataset that made the most sense when homebuyers are looking to buy a house. 
+We chose the features from the original dataset that made the most sense when homebuyers are looking to buy a house. Original Set was (158957 lines , 49 columns). and after cleaning we got to 101974 lines ,15 columns
+[Original](https://github.com/Diana7e/Dream_Team_Final_Project/blob/6399b1357a1730518d94d2e7d2f4aebd2ffbe2b6/pic/Data%20Exploration/Original%20data%20set.png)
+[Cleaned] (https://github.com/Diana7e/Dream_Team_Final_Project/blob/6399b1357a1730518d94d2e7d2f4aebd2ffbe2b6/pic/Data%20Exploration/data%20set%20after%20clean%20up.png)
 
 The features include:
  	
@@ -122,6 +124,8 @@ We found through Data Exploration that we need to use Price Per room as X variab
 [First Attempt with sales price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/for%20ML/Final_project_ML.ipynb)
 ![First Attempt with sales price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Machine%20Learning/First%20run%20.png)
 
+ RandomForrestRegressor has highest R2 between  models used. 
+
 ### Update 2
 after trying to alter  models we were able to achieve an accuracy >50%. By cleaning ireelevant data and working with Price per room instead of Sales price. Also Quadrant and ZIP plays a role:  For example, a house in southeast DC which is considered mostly low income could have the same number of features as a house in northwest DC which is considered higher income but sell for completely different prices. 
 
@@ -129,7 +133,7 @@ after trying to alter  models we were able to achieve an accuracy >50%. By clean
 
 ![RFR Prediction](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Machine%20Learning/RFR%20result%20.png)
 
-As we can see we got to a very close match between Prediction price and Actual with RFR. Considering we are using a limited data set, and ignoring condition or property, Size of SQf, and year build -  it does increases error in the prediction model.
+As we can see we got to a very close match between Prediction price and Actual with RFR.  RandomForrestRegressorContinue to have  higher R2 - as a result it countinue to be  prefered model. Considering we are using a limited data set, and ignoring condition or property, Size of SQf, and year build -  it does increases error in the prediction model.
 
 
 [Third Attempt with price per room price and expanding to Machine Learning](https://github.com/Diana7e/Dream_Team_Final_Project/blob/df08c175cc03d1802e3b509487c31c2f02aba04b/Final_ML_codes_update(sied).ipynb)
@@ -149,6 +153,9 @@ Tableau is the Data Visualization Tool currently being used for this Project and
 - Map Depicting the Location of Schools in each Ward of DC
 - Average Price vs. School Ranking
 ![map ilustration](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/school%20rannking%20and%20avg%20price%20per%20woom%20.png)
+
+
+
 We were able to use our dashboard to answer two of our initial questions:
 
 1. Does the rating of schools affect the home value? If so, how?

@@ -105,7 +105,7 @@ Following the selection variables for the machine learning data set[ML_data2.csv
 
 Following the first step of feature selection, we conducted data pre-processing on the target and features. We started assessing the quality of the target. We first tried to look at the descriptive statistics of target variable, we find out that infinite values are in the data and we cleaned for it. Further, we obtained outliers using the normal distribution and box plots. As we have several data points, and the outliers are small in number, we choose to drop outliers instead of imputing with mean or average values. 
 
-![drop outliers] (https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/drop_target_outliers.png)
+![drop outliers](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/drop_target_outliers.png)
 
 In the second data- pre-processing, we conducted was encoding the categorical variables in the data set. We use the ‘get dummies () ‘function to convert the string categorical variables into numeric. This increases the number of features in the data set, which demands further feature reduction method.
 Once the target and features were pre-processed, we run a correlation heatmap to have a quick overview of the association of the target variable with the features. From the heatmap, we can see that the sale data and number of bathrooms are top correlates of price per room. Our key variables, prime rates and school raking are negatively correlated to the price per room. This is expected as, for example, top ranking is associated with lowest number in terms of ranking.
@@ -115,7 +115,7 @@ Once the target and features were pre-processed, we run a correlation heatmap to
 Next, the data was split into train and test using the sklearn train_test_split function. Both the features and target variable werealso scaled using sklearn StandardScaler function which   scales each variable separately by subtracting the mean (called centering) and dividing by the standard deviation to shift the distribution to have a mean of zero and a standard deviation of one.
 Once the data is split and, scaled, we run the second feature reduction using feature importance method. We need the feature reduction as we have about 19 features. We use the random frost method for feature selection, which we will see below it is among the two best models.  Using this method, we reduce the number of features to the top ten. The two main features were among the top ten features, in fact, school raking was the second important feature. 
 
-![top ten features] (https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/topten%20features.png)
+![top ten features](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/topten%20features.png)
 
 The data set was updated to include only these features and the target variable. Using these features and target variable, we ran 4 supervised models and deep learning model. The following are the four supervised machine learning models
 -	Linear model: since out target variable is continuous, this is the first candidate

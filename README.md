@@ -81,9 +81,9 @@ Used pandas to clean data as well as remove large amounts of rows from the ML da
 ### Feature Engineering - Feature Select - Why and How Selected?
 
 We chose the features from the original dataset that made the most sense when homebuyers are looking to buy a house. Original Set was (158957 lines , 49 columns). and after cleaning we got to 101974 lines ,15 columns
-[Original](https://github.com/Diana7e/Dream_Team_Final_Project/blob/6399b1357a1730518d94d2e7d2f4aebd2ffbe2b6/pic/Data%20Exploration/Original%20data%20set.png)
+![Original](https://github.com/Diana7e/Dream_Team_Final_Project/blob/6399b1357a1730518d94d2e7d2f4aebd2ffbe2b6/pic/Data%20Exploration/Original%20data%20set.png)
 
-[Cleaned] (https://github.com/Diana7e/Dream_Team_Final_Project/blob/6399b1357a1730518d94d2e7d2f4aebd2ffbe2b6/pic/Data%20Exploration/data%20set%20after%20clean%20up.png)
+![Cleaned] (https://github.com/Diana7e/Dream_Team_Final_Project/blob/6399b1357a1730518d94d2e7d2f4aebd2ffbe2b6/pic/Data%20Exploration/Original%20data%20set.png)
 
 The features include:
  	

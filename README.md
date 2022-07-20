@@ -66,12 +66,10 @@ Our database was constructed using PostgreSQL in pgAdmin 4. Our tables and relat
  
 
 ## Machine Learning
-
-Provisional ML Model 
+The Machine Learning resources and codes are found folder [for ML](https://github.com/Diana7e/Dream_Team_Final_Project/tree/main/for%20ML)
+Data:[ML_data2.csv](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/ML_data2.csv)
+Codes:[Final_ML_codes_update(sied).ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied).ipynb)
 Uses Provisional DB
-Labels for INPUTs
-
-
 
 ### Data Preprocessing
 
@@ -79,14 +77,11 @@ Used pandas to clean data as well as remove large amounts of rows from the ML da
 
 
 ### Feature Engineering - Feature Select - Why and How Selected?
-
-We chose the features from the original dataset that made the most sense when homebuyers are looking to buy a house. Original Set was (158957 lines , 49 columns). and after cleaning we got to 101974 lines ,15 columns
+The cleaned data set [ML_data2.csv] is used for the machine learning part. This data is generated from the database. In selecting features, we followed two steps. The first step is researchers select features from the original dataset that made the most sense when homebuyers are looking to buy a house. Original Set was (158957 lines, 49 columns) and after cleaning we got to 101974 lines ,15 columns.
 ![Original](https://github.com/Diana7e/Dream_Team_Final_Project/blob/6399b1357a1730518d94d2e7d2f4aebd2ffbe2b6/pic/Data%20Exploration/Original%20data%20set.png)
-
 ![Cleaned](https://github.com/Diana7e/Dream_Team_Final_Project/blob/677c16e67cedada27bfe2da0233491831c4d700a/pic/Data%20Exploration/data%20set%20after%20clean%20up.png)
 
-The features include:
- 	
+Based on this step, the features include:
 * HF_BATHRM - Number of half bathrooms in the house		
 * SALEDATE - Year of sale 	
 * PRIME - Prime rate for the year of the saledate
@@ -99,51 +94,55 @@ The features include:
 * ZIPCODE - Zipcode of the house
 * AC - If the house has AC or not 	 	 	 	 	 	
 * QUADRANT - Quandrant of Washington DC where the house is located
+* Longitude- the geographic longitude of the houses
+* Latitude- the geographic latitude of the houses
 * BATHRM - Number of bathrooms in the house
-* added Price Per Roon calculationn to normalise for the trend analysis.
+* added Price Per Room calculation to normalize for the trend analysis.
 
-![Ilustration 1](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Data%20Exploration/Data%20exporation%201.png)
-![Ilustration 2](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Data%20Exploration/Data%20Exploration%204.png)
-![Ilustration 3](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Data%20Exploration/Feature%20Importance.png) 
+Following the selection variables for the machine learning data set[ML_data2.csv], we further reduce ID and redundant variables. We have different location variables such as latitude, longitude, zipcode, ward, quadrant.  For our analysis, we only need one location variable quadrant and we drop the other location variables. From the [Final_ML_codes_update(sied).ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied).ipynb) machine learning code we drop the variables as follows.
 
-### Machine Learning Model Limitations and Benefits
-RandomForestRegressor
-Function: Input data is passed through multiple trees and it outputs the mean prediction of the individual trees
-RFR provides higher accuracy through cross-validation
-More trees cushion potential over-fitting
+![drop additional locations](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/drop%20id%20and%20additional%20locations.png)
 
-LinearRegression
-Function: Predicts a dependent variable target based on the given independent variables
-Four assumptions of linear regression: linear relationship, independence, homoscedasticity, normality 
-Very simple model
-Avoid overfitting by using cross-validation
+Following the first step of feature selection, we conducted data pre-processing on the target and features. We started assessing the quality of the target. We first tried to look at the descriptive statistics of target variable, we find out that infinite values are in the data and we cleaned for it. Further, we obtained outliers using the normal distribution and box plots. As we have several data points, and the outliers are small in number, we choose to drop outliers instead of imputing with mean or average values. 
+
+![drop outliers] (https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/drop_target_outliers.png)
+
+In the second data- pre-processing, we conducted was encoding the categorical variables in the data set. We use the ‘get dummies () ‘function to convert the string categorical variables into numeric. This increases the number of features in the data set, which demands further feature reduction method.
+Once the target and features were pre-processed, we run a correlation heatmap to have a quick overview of the association of the target variable with the features. From the heatmap, we can see that the sale data and number of bathrooms are top correlates of price per room. Our key variables, prime rates and school raking are negatively correlated to the price per room. This is expected as, for example, top ranking is associated with lowest number in terms of ranking.
+
+![correlation](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/heatmap.png)
+
+Next, the data was split into train and test using the sklearn train_test_split function. Both the features and target variable werealso scaled using sklearn StandardScaler function which   scales each variable separately by subtracting the mean (called centering) and dividing by the standard deviation to shift the distribution to have a mean of zero and a standard deviation of one.
+Once the data is split and, scaled, we run the second feature reduction using feature importance method. We need the feature reduction as we have about 19 features. We use the random frost method for feature selection, which we will see below it is among the two best models.  Using this method, we reduce the number of features to the top ten. The two main features were among the top ten features, in fact, school raking was the second important feature. 
+
+![top ten features] (https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/topten%20features.png)
+
+The data set was updated to include only these features and the target variable. Using these features and target variable, we ran 4 supervised models and deep learning model. The following are the four supervised machine learning models
+-	Linear model: since out target variable is continuous, this is the first candidate
+-	Random Forest Regressor: we can use this this model for both continuous and categorical target variables
+-	Gradient Boost model: we can also use this this model for both continuous and categorical target variables
+-	Decision Tree can also be used with continues target variables
+
+### Model evaluation results
+ #### Linear model:
+![linear](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/linear.png)
+#### Random Forest Regressor
+![Random-Forest](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/RFT.png)
+#### Gradient Boost model
+![GB](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/GB.png)
+#### Decision Tree
+![DT](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/DTR.png)
+
+# Deep learning
+![model](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/Deep%20learning_1.png)
+
+![evaluation](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/Deep%20learning_2.png)
 
 
-### Update 1
-We found through Data Exploration that we need to use Price Per room as X variable instead of sales price total - to avoid multi-correlation issues and also we are exploring Linear Regression and RandomForrestRegressor  to see which one will give higher accuracy
+### Final Model
 
-[First Attempt with sales price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/for%20ML/Final_project_ML.ipynb)
-![First Attempt with sales price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Machine%20Learning/First%20run%20.png)
+Based on the above results, Gradient Boost model and Random Forest Regressor have the highest R2 and lowest mean squared error. Gradient Boost model is used to predict our data. 
 
- RandomForrestRegressor has highest R2 between  models used. 
-
-### Update 2
-after trying to alter  models we were able to achieve an accuracy >50%. By cleaning ireelevant data and working with Price per room instead of Sales price. Also Quadrant and ZIP plays a role:  For example, a house in southeast DC which is considered mostly low income could have the same number of features as a house in northwest DC which is considered higher income but sell for completely different prices. 
-
-[Second Attempt with price per room price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/cleaned_data/Final_project_ML-update.ipynb)
-
-![RFR Prediction](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Machine%20Learning/RFR%20result%20.png)
-
-As we can see we got to a very close match between Prediction price and Actual with RFR.  RandomForrestRegressorContinue to have  higher R2 - as a result it countinue to be  prefered model. Considering we are using a limited data set, and ignoring condition or property, Size of SQf, and year build -  it does increases error in the prediction model.
-
-
-[Third Attempt with price per room price and expanding to Machine Learning](https://github.com/Diana7e/Dream_Team_Final_Project/blob/df08c175cc03d1802e3b509487c31c2f02aba04b/Final_ML_codes_update(sied).ipynb)
-
-
-
-### Update 3
-
- 
 ## Dashboard
 
 [Tableau Dashboard](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/housing%20dc.twbx)

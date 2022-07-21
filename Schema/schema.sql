@@ -2,39 +2,41 @@
 -- -- Creating tables for HousePriceCalculatorDB
 
 -- -- Creating PrimeRate table
+-- -- DROP TABLE PrimeRate;
 -- CREATE TABLE PrimeRate (
--- 	Date int NOT NULL,
---  Prime float NOT NULL,
+-- 	Date INT NOT NULL,
+--  Prime FLOAT NOT NULL,
 -- PRIMARY KEY (Date)
 -- );
 
----- Creating School table
---  Drop Table School;
+-- Creating School table
+-- DROP TABLE School;
 -- CREATE TABLE School (
--- 	School varchar NOT NULL,
--- 	Address varchar NOT NULL,
--- 	City varchar NOT NULL,
--- 	District varchar NOT NULL,
--- 	Zip integer  NOT NULL,
--- 	County varchar NOT NULL,
--- 	Longitude float NOT NULL,
--- 	Latitude float NOT NULL,
--- 	"Rank(2018-19)" int NOT NULL,
--- 	SchoolDigger_StarRating int NOT NULL,
+-- 	School VARCHAR NOT NULL,
+-- 	Address VARCHAR NOT NULL,
+-- 	City VARCHAR NOT NULL,
+-- 	District VARCHAR NOT NULL,
+-- 	Zip INTEGER  NOT NULL,
+-- 	County VARCHAR NOT NULL,
+-- 	Longitude FLOAT NOT NULL,
+-- 	Latitude FLOAT NOT NULL,
+-- 	"Rank(2018-19)" INT NOT NULL,
+-- 	SchoolDigger_StarRating INTNOT NULL,
 -- 	PRIMARY KEY (School)
 -- );
 
 -- -- Creating SchoolWard table
+-- -- DROP TABLE SchoolWard;
 --  CREATE TABLE SchoolWard (
--- 	School varchar NOT NULL,
---  Ward int NOT NULL,
--- 	"Rank_(2018-19)" int NOT NULL,
+-- 	School VARCHAR NOT NULL,
+--  Ward INT NOT NULL,
+-- 	"Rank_(2018-19)" INT NOT NULL,
 --  PRIMARY KEY (Ward),
 --  FOREIGN KEY (School) REFERENCES School(School)
 -- );
 
 -- -- Delete table if it already exist
--- DROP TABLE House ;
+--  DROP TABLE House ;
 -- CREATE TABLE House (
 --  	Bld_id BIGINT NOT NULL,
 -- 	Bathrm BIGINT NOT NULL,
@@ -43,13 +45,14 @@
 -- 	Rooms BIGINT NOT NULL,
 -- 	Bedrm BIGINT NOT NULL,
 -- 	Saledate BIGINT NOT NULL,
--- 	Kitchens float NOT NULL,
+-- 	Kitchens FLOAT NOT NULL,
 -- 	Fireplaces BIGINT NOT NULL,
 -- 	Landarea BIGINT NOT NULL,
 -- 	Longitude FLOAT NOT NULL,
 -- 	Latitude FLOAT NOT NULL,
 -- 	Quadrant TEXT NOT NULL,
 -- 	Price FLOAT NOT NULL,
+-- 	PricePRM FLOAT NOT NULL,
 -- 	Zipcode FLOAT NOT NULL,
 -- 	Ward BIGINT NOT NULL,
 -- 	PRIMARY KEY (Bld_id),

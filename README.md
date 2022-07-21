@@ -154,7 +154,7 @@ Tableau is the Data Visualization Tool currently being used for this Project and
 - Average Price vs. School Ranking
 ![map ilustration](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/school%20rannking%20and%20avg%20price%20per%20woom%20.png)
 
-
+![first schetch](https://github.com/Diana7e/Dream_Team_Final_Project/blob/2615998424b2032574e54c117ac139bc4eb34718/pic/Dashboard/scetches.jpg)
 
 We were able to use our dashboard to answer two of our initial questions:
 
@@ -170,5 +170,4 @@ We were able to use our dashboard to answer two of our initial questions:
 The project would be for home buyers/sallers to determine if the home they are looking to purchase is above or below avg price for this location, size, and school proximity.
 It is important to note that this model does not take into account Year build, Sq, Condition, etc  
 ![Avg Home Pirce vs School Ranking](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/Estimated%20Price%20per%20room.png)
-
 

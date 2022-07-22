@@ -77,7 +77,7 @@ Used pandas to clean data as well as remove large amounts of rows from the ML da
 
 
 ### Feature Engineering - Feature Select - Why and How Selected?
-The cleaned data set [ML_data2.csv] is used for the machine learning part. This data is generated from the database. In selecting features, we followed two steps. The first step is researchers select features from the original dataset that made the most sense when homebuyers are looking to buy a house. Original Set was (158957 lines, 49 columns) and after cleaning we got to 101974 lines ,15 columns.
+The cleaned data set [ML_data2.csv](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/ML_data2.csv) is used for the machine learning part. This data is generated from the database. In selecting features, we followed two steps. The first step is researchers select features from the original dataset that made the most sense when homebuyers are looking to buy a house. Original Set was (158957 lines, 49 columns) and after cleaning we got to 101974 lines ,15 columns.
 ![Original](https://github.com/Diana7e/Dream_Team_Final_Project/blob/6399b1357a1730518d94d2e7d2f4aebd2ffbe2b6/pic/Data%20Exploration/Original%20data%20set.png)
 ![Cleaned](https://github.com/Diana7e/Dream_Team_Final_Project/blob/677c16e67cedada27bfe2da0233491831c4d700a/pic/Data%20Exploration/data%20set%20after%20clean%20up.png)
 

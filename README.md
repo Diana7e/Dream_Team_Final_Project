@@ -74,6 +74,7 @@ The Machine Learning resources and codes are found folder [for ML](https://githu
 - Codes:[Final_ML_codes_update(sied)-update.ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied)-update.ipynb)
 - Uses Provisional DB
 
+
 ### Data Preprocessing
 
 Used pandas to clean data as well as remove large amounts of rows from the ML dataset due to memory errors. Also used OneHotEncoder to convert categorical data into numerical. Seaborn was used for visuals to help locate outliers which were eventually removed.
@@ -102,7 +103,7 @@ Based on this step, the features include:
 * BATHRM - Number of bathrooms in the house
 * added Price Per Room calculation to normalize for the trend analysis.
 
-Following the selection variables for the machine learning data set[ML_data2.csv], we further reduce ID and redundant variables. We have different location variables such as latitude, longitude, zipcode, ward, quadrant.  For our analysis, we only need one location variable quadrant and we drop the other location variables. From the [Final_ML_codes_update(sied)-update.ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied)-update.ipynb) machine learning code we drop the variables as follows.
+Following the selection variables for the machine learning data set[ML_data2.csv], we further reduce ID and redundant variables. We have different location variables such as latitude, longitude, zipcode, ward, quadrant.  For our analysis, we only need one location variable quadrant and we drop the other location variables. From the [Final_ML_codes_update(sied).ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied).ipynb) machine learning code we drop the variables as follows.
 
 ![drop additional locations](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/drop%20id%20and%20additional%20locations.png)
 
@@ -147,6 +148,9 @@ As we can see we got to a very close match between Prediction price and Actual w
 
 [Third Attempt with price per room price and expanding to Machine Learning](https://github.com/Diana7e/Dream_Team_Final_Project/blob/df08c175cc03d1802e3b509487c31c2f02aba04b/Final_ML_codes_update(sied).ipynb)
 
+
+### Update 3
+
  #### Linear model:
 ![linear](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/linear.png)
 #### Random Forest Regressor
@@ -167,6 +171,7 @@ As we can see we got to a very close match between Prediction price and Actual w
 Based on the above results, Gradient Boost model and Random Forest Regressor have the highest R2 and lowest mean squared error. Gradient Boost model is used to predict our data. 
 We also were able to  record the results in the SQL  in a new table.
 
+[Machine Learning model](https://github.com/Diana7e/Dream_Team_Final_Project/blob/d246f51fbbd3547f3da926e0b94ea1a334f55e94/for%20ML/Final_ML_codes_update(sied)-update.ipynb)
 
 
 

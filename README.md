@@ -177,7 +177,7 @@ We also were able to  record the results in the SQL  in a new table.
 
 ## Dashboard
 
-[Tableau Dashboard](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/housing%20dc.twbx)
+[Tableau Dashboard](https://github.com/Diana7e/Dream_Team_Final_Project/blob/692283788308b75865ca02f8744e89d3852d8126/housing%20dc%203rd.twbx)
 
 Tableau is the Data Visualization Tool currently being used for this Project and will depict the following:
 - Average Price Per Room by Location and School Rating
@@ -191,9 +191,16 @@ Tableau is the Data Visualization Tool currently being used for this Project and
 ### Update 2
 The Dashboard Storyline will consist of four dashboards (db) that will first help to educate Buyer or seller of the market and then provide a tool to explore future pricing ot the property. 
 The first db will provide an overview of the DC Market and overall statistics. 
+![Overview](https://github.com/Diana7e/Dream_Team_Final_Project/blob/692283788308b75865ca02f8744e89d3852d8126/pic/Dashboard/Story%20Overview.png)
+
 The second db will provide a correlation of price per room with Prime rate over a period of time with a breakdown of location vs size of the house. 
+![Prime rate and Price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/692283788308b75865ca02f8744e89d3852d8126/pic/Dashboard/Prime%20rate%20.png)
+
 The third db will be focused on the corelation of price per room with school ranking, location, and size of the house.
+![School Rank and Price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/692283788308b75865ca02f8744e89d3852d8126/pic/Dashboard/school%20rank%20and%20price.png)
+
 The final db will be a tool that customers will be able to choose a location (quadrant and zip) and choose the size of the house (3bedroon for example) -then see trending prices in the future.  Tableau prototype will show a simplified version (linear regression approach) based on time-lapse and price per room trend. 
+![Pricing Tool](https://github.com/Diana7e/Dream_Team_Final_Project/blob/692283788308b75865ca02f8744e89d3852d8126/pic/Dashboard/pricing%20tool.png)
 
 We were able to use our dashboard to answer two of our initial questions:
 

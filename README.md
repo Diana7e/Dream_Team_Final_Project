@@ -71,7 +71,7 @@ Update: we have created an extra table to store prediction from ML Model.
 ## Machine Learning
 The Machine Learning resources and codes are found folder [for ML](https://github.com/Diana7e/Dream_Team_Final_Project/tree/main/for%20ML)
 - Data:[ML_data2.csv](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/ML_data2.csv)
-- Codes:[Final_ML_codes_update(sied).ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied).ipynb)
+- Codes:[Final_ML_codes_update(sied)-update.ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied)-update.ipynb)
 - Uses Provisional DB
 
 ### Data Preprocessing

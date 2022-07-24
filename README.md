@@ -36,8 +36,9 @@ The outcome of this project we also believe will provide a guide for future home
 - Tableau
 
 
-### Group Presentation Can Be Found [Here](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/Dream_Team_Project_Presentation.pptx)
+### Group Presentation Can Be Found [Here](https://github.com/Diana7e/Dream_Team_Final_Project/blob/6b30ab3c9b9e8ca80fecdb263599c070bd07e8f7/Dream_Team_Project_Presentation%20new.pptx)
 
+Update for third segmnent: we have updated the presentation format and style, minimizing overall technical aspects and focusing more on the project outcome, where the dashboard will first educate buyer /seller on market status and dependencies to school ranking and to the prime rates. and then will talk about how to explore  the tool to estimate the price for the property they are interestedin. 
 
 ## Data Exploration
  
@@ -63,7 +64,9 @@ Our database was constructed using PostgreSQL in pgAdmin 4. Our tables and relat
 ![Final_ERD](https://github.com/Diana7e/Dream_Team_Final_Project/blob/0ccd6804cc487fa3167548a021a4f9974764811d/pic/data%20dictionary.png)
  
 [Clean Set of tables](https://github.com/Diana7e/Dream_Team_Final_Project/blob/fff9db90abc592ebec128466b6f817e7442157b3/cleaned_data/ML_data2.csv)
- 
+
+Update: we have created an extra table to store prediction from ML Model.
+[prediction table](https://github.com/Diana7e/Dream_Team_Final_Project/blob/e8924df674e9fed25c3a233de7d9fbe937596081/Data%20Base/SQL%20tables/PrimeRate.csv)
 
 ## Machine Learning
 The Machine Learning resources and codes are found folder [for ML](https://github.com/Diana7e/Dream_Team_Final_Project/tree/main/for%20ML)
@@ -159,9 +162,13 @@ As we can see we got to a very close match between Prediction price and Actual w
 ![evaluation](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/Deep%20learning_2.png)
 
 
-### Final Model
+### Final Model 
 
 Based on the above results, Gradient Boost model and Random Forest Regressor have the highest R2 and lowest mean squared error. Gradient Boost model is used to predict our data. 
+We also were able to  record the results in the SQL  in a new table.
+
+
+
 
 ## Dashboard
 
@@ -175,6 +182,13 @@ Tableau is the Data Visualization Tool currently being used for this Project and
 ![map ilustration](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/school%20rannking%20and%20avg%20price%20per%20woom%20.png)
 
 ![first schetch](https://github.com/Diana7e/Dream_Team_Final_Project/blob/2615998424b2032574e54c117ac139bc4eb34718/pic/Dashboard/scetches.jpg)
+
+### Update 2
+The Dashboard Storyline will consist of four dashboards (db) that will first help to educate Buyer or seller of the market and then provide a tool to explore future pricing ot the property. 
+The first db will provide an overview of the DC Market and overall statistics. 
+The second db will provide a correlation of price per room with Prime rate over a period of time with a breakdown of location vs size of the house. 
+The third db will be focused on the corelation of price per room with school ranking, location, and size of the house.
+The final db will be a tool that customers will be able to choose a location (quadrant and zip) and choose the size of the house (3bedroon for example) -then see trending prices in the future.  Tableau prototype will show a simplified version (linear regression approach) based on time-lapse and price per room trend. 
 
 We were able to use our dashboard to answer two of our initial questions:
 

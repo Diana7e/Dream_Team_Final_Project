@@ -1,0 +1,2 @@
+SMARTY_Auth_ID ='125af11a-f69f-89d3-d9fb-220fdf63ad14'
+SMARTY_Auth_Token ="XRjV7H3UOvpvn6Hq6FBG"

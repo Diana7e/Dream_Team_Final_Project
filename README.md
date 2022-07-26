@@ -36,7 +36,7 @@ The outcome of this project we also believe will provide a guide for future home
 - Tableau
 
 
-### Group Presentation Can Be Found [Here](https://github.com/Diana7e/Dream_Team_Final_Project/blob/6b30ab3c9b9e8ca80fecdb263599c070bd07e8f7/Dream_Team_Project_Presentation%20new.pptx)
+### Group Presentation Can Be Found [Here](https://docs.google.com/presentation/d/1rOfyy8o_Ej0Z_JUQ3G5W4i9mK5TW14LclSOZLRk39As/edit?usp=sharing)
 
 Update for third segmnent: we have updated the presentation format and style, minimizing overall technical aspects and focusing more on the project outcome, where the dashboard will first educate buyer /seller on market status and dependencies to school ranking and to the prime rates. and then will talk about how to explore  the tool to estimate the price for the property they are interestedin. 
 

@@ -36,7 +36,7 @@ The outcome of this project we also believe will provide a guide for future home
 - Tableau
 
 
-### Group Presentation Can Be Found [Here](https://docs.google.com/presentation/d/1rOfyy8o_Ej0Z_JUQ3G5W4i9mK5TW14LclSOZLRk39As/edit?usp=sharing)
+### Group Presentation Can Be Found [Here](https://docs.google.com/presentation/d/1n9dOmopQuCGgokBxgh4I9yOSfAUceQsbju2NEl70YTU/edit?usp=sharing)
 
 Update for third segmnent: we have updated the presentation format and style, minimizing overall technical aspects and focusing more on the project outcome, where the dashboard will first educate buyer /seller on market status and dependencies to school ranking and to the prime rates. and then will talk about how to explore  the tool to estimate the price for the property they are interestedin. 
 

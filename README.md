@@ -177,9 +177,7 @@ We also were able to  record the results in the SQL  in a new table.
 
 ## Dashboard
 
-[Tableau Dashboard](https://github.com/Diana7e/Dream_Team_Final_Project/blob/62a5577d8c1b2341c29b81469885a923063ecbd9/Dashboard/housing%20dc%204th.twbx)
-
-[https://public.tableau.com/views/housingdc4th/DCHousingPrices?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+[Tableau Dashboard](https://public.tableau.com/views/housingdc5th/DCHousingPrices?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 Tableau is the Data Visualization Tool currently being used for this Project and will depict the following:
 - Average Price Per Room by Location and School Rating

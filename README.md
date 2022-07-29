@@ -185,7 +185,7 @@ Tableau is the Data Visualization Tool currently being used for this Project and
 - Home Sales By Year and corelation with PRIME Rate
 - Map Depicting the Location of Schools in each Ward of DC
 - Average Price vs. School Ranking
-![map ilustration](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/school%20rannking%20and%20avg%20price%20per%20woom%20.png)
+![data connection diagram](https://github.com/Diana7e/Dream_Team_Final_Project/blob/4b218170df1004599e8bb897e66ba878da0e7d85/pic/Dashboard/data%20conection%20in%20dashboard.JPG)
 
 ![first schetch](https://github.com/Diana7e/Dream_Team_Final_Project/blob/2615998424b2032574e54c117ac139bc4eb34718/pic/Dashboard/scetches.jpg)
 
@@ -193,28 +193,35 @@ Tableau is the Data Visualization Tool currently being used for this Project and
 The Dashboard Storyline will consist of four dashboards (db) that will first help to educate Buyer or seller of the market and then provide a tool to explore future pricing ot the property. 
 The first db will provide an overview of the DC Market and overall statistics. 
 ![Overview](https://github.com/Diana7e/Dream_Team_Final_Project/blob/692283788308b75865ca02f8744e89d3852d8126/pic/Dashboard/Story%20Overview.png)
+![Updated overview](https://github.com/Diana7e/Dream_Team_Final_Project/blob/4b218170df1004599e8bb897e66ba878da0e7d85/pic/Dashboard/DC%20market%20overview.png)
 
 The second db will provide a correlation of price per room with Prime rate over a period of time with a breakdown of location vs size of the house. 
 ![Prime rate and Price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/692283788308b75865ca02f8744e89d3852d8126/pic/Dashboard/Prime%20rate%20.png)
-
+![Updated](https://github.com/Diana7e/Dream_Team_Final_Project/blob/4b218170df1004599e8bb897e66ba878da0e7d85/pic/Dashboard/Prime%20rate%20and%20price.png)
 The third db will be focused on the corelation of price per room with school ranking, location, and size of the house.
 ![School Rank and Price](https://github.com/Diana7e/Dream_Team_Final_Project/blob/692283788308b75865ca02f8744e89d3852d8126/pic/Dashboard/school%20rank%20and%20price.png)
 
+![Updated](https://github.com/Diana7e/Dream_Team_Final_Project/blob/4b218170df1004599e8bb897e66ba878da0e7d85/pic/Dashboard/school%20ranking%20and%20price.png)
+
 The final db will be a tool that customers will be able to choose a location (quadrant and zip) and choose the size of the house (3bedroon for example) -then see trending prices in the future.  Tableau prototype will show a simplified version (linear regression approach) based on time-lapse and price per room trend. 
 ![Pricing Tool](https://github.com/Diana7e/Dream_Team_Final_Project/blob/692283788308b75865ca02f8744e89d3852d8126/pic/Dashboard/pricing%20tool.png)
+![Updated](https://github.com/Diana7e/Dream_Team_Final_Project/blob/4b218170df1004599e8bb897e66ba878da0e7d85/pic/Dashboard/Price%20Prediction%20Model.png)
 
-We were able to use our dashboard to answer two of our initial questions:
+We were able to use our dashboard to answer our initial questions:
 
 1. Does the rating of schools affect the home value? If so, how?
-	We can see that schools with a higher ranking are located in a ward where the average home price is higher.
+	We can see that schools with a higher ranking are located in a ward where the average home price is higher. There is a direct correlation to the Ranking of the school. As seen  in this example, within the same Zip code, the price per  Bedroom (example 3 bedroom house/apt) varies by 30% between high and lower-ranked school
+
 ![Avg Home Pirce vs School Ranking](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/Preci%20per%20%20room%20%20(3dr)%20based%20on%20school%20rantinking%20and%20location'.png)
 
 2. How does Prime Rate affect home value?
-	we can see that as the interest (prime) rate has decreased, the average home price has increased over time.
+	we can see that as the interest (prime) rate has decreased, the average home price has increased over time.Over a 30-plus year horizon, we do see a negative relation between Price per room and Prime rate difference. However, in the past 10 years, that correlation is less vivid. It looks like depending on the location and size of the house, the impact of Prime Rate is variable. 
+
+
 ![Prime Rate vs Home Value](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/prime%20rate%20and%20avr%20price%20per%20room%20overtime.png)
 
 3. Are homes in the area being under- or over-priced?
 The project would be for home buyers/sallers to determine if the home they are looking to purchase is above or below avg price for this location, size, and school proximity.
 It is important to note that this model does not take into account Year build, Sq, Condition, etc  
-![Avg Home Pirce vs School Ranking](https://github.com/Diana7e/Dream_Team_Final_Project/blob/264c87ea1e693503b216dd0648210f1a900db06e/pic/Dashboard/Estimated%20Price%20per%20room.png)
+![Pricing tool](https://github.com/Diana7e/Dream_Team_Final_Project/blob/4b218170df1004599e8bb897e66ba878da0e7d85/pic/Dashboard/Price%20Prediction%20Model.png)
 

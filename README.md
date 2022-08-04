@@ -4,8 +4,8 @@ Bootcamp Final Project
 
 ## Background
 ### Project Description
-**Topic:** Home Price Calculator / Real Property Estimator
-_Using machine learning model to predict home value._
+**Topic:** Home Price Calculator / Real Property Estimator Using machine learning model to predict home value.
+
 An analysis of the effect of school ranking and primerate on the housing price in the Washington DC Metropoplitan area. 
 Shelter a key need in the span of every life can never be overemphasized. Whether it is starting a family, relocation or even investment choice, the dream of many to have a place to call their own.
 Understanding the ins and outs of the Real Estate market and the entire home buying experince can often be a challenging task for most individuals on house hunt. 

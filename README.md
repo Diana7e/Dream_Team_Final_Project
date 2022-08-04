@@ -113,7 +113,7 @@ Following the first step of feature selection, we conducted data pre-processing 
 ![drop outliers](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/drop_target_outliers.png)
 
 In the second data- pre-processing, we conducted was encoding the categorical variables in the data set. We use the ‘get dummies () ‘function to convert the string categorical variables into numeric. This increases the number of features in the data set, which demands further feature reduction method.
-Once the target and features were pre-processed, we run a correlation heatmap to have a quick overview of the association of the target variable with the features. From the heatmap, we can see that the sale data and number of bathrooms are top correlates of price per room. Our key variables, prime rates and school raking are negatively correlated to the price per room. This is expected as, for example, top ranking is associated with lowest number in terms of ranking.
+Once the target and features were pre-processed, we run a correlation heatmap to have a quick overview of the association of the target variable with the features. From the heatmap, we can see that the sale date and number of bathrooms are top correlates of price per room. Our key variables, prime rates and school raking are negatively correlated to the price per room. This is expected as, for example, top ranking is associated with lowest number in terms of ranking.
 
 ![correlation](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/heatmap.png)
 

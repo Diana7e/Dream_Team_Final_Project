@@ -71,7 +71,7 @@ Update: we have created an extra table to store prediction from ML Model.
 ## Machine Learning
 The Machine Learning resources and codes are found folder [for ML](https://github.com/Diana7e/Dream_Team_Final_Project/tree/main/for%20ML)
 - Data:[ML_data2.csv](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/ML_data2.csv)
-- Codes:[Final_ML_codes_update(sied)-update.ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied)-update.ipynb)
+- Codes:[Final_ML_codes_update(sied)-update-RMSE.ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied)-update-RMSE.ipynb)
 - Uses Provisional DB
 
 
@@ -103,7 +103,7 @@ Based on this step, the features include:
 * BATHRM - Number of bathrooms in the house
 * added Price Per Room calculation to normalize for the trend analysis.
 
-Following the selection variables for the machine learning data set[ML_data2.csv], we further reduce ID and redundant variables. We have different location variables such as latitude, longitude, zipcode, ward, quadrant.  For our analysis, we only need one location variable quadrant and we drop the other location variables. From the [Final_ML_codes_update(sied).ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied).ipynb) machine learning code we drop the variables as follows.
+Following the selection variables for the machine learning data set[ML_data2.csv], we further reduce ID and redundant variables. We have different location variables such as latitude, longitude, zipcode, ward, quadrant.  For our analysis, we only need one location variable quadrant and we drop the other location variables. From the [Final_ML_codes_update(sied)-update-RMSE.ipynb](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/for%20ML/Final_ML_codes_update(sied)-update-RMSE.ipynb) machine learning code we drop the variables as follows.
 
 ![drop additional locations](https://github.com/Diana7e/Dream_Team_Final_Project/blob/main/pic/Machine%20Learning/drop%20id%20and%20additional%20locations.png)
 

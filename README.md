@@ -170,6 +170,7 @@ As we can see we got to a very close match between Prediction price and Actual w
 ### Final Model 
 
 Based on the above results, Gradient Boost model and Random Forest Regressor have the highest R2 and lowest mean squared error. Gradient Boost model is used to predict our data. 
+The R2 result of the  Gradient Boost model shows that 74% of the variation of the traget variable is explained by the selected 10 features. 
 We also were able to  record the results in the SQL  in a new table.
 
 [Machine Learning model](https://github.com/Diana7e/Dream_Team_Final_Project/blob/d246f51fbbd3547f3da926e0b94ea1a334f55e94/for%20ML/Final_ML_codes_update(sied)-update.ipynb)

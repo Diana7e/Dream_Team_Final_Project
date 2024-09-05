@@ -1,7 +1,4 @@
-# Dream_Team_Final_Project
-Bootcamp Final Project 
-#  Predict home Prices
-
+# DC Housing Project 
 ## Background
 ### Project Description
 **Topic:**  An analysis of the effect of school ranking and primerate on the housing price in the Washington DC Metropoplitan area. 
